@@ -8,7 +8,10 @@ export ZSH="/home/alereyleyva/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME=""
+
+autoload -U promptinit; promptinit
+prompt pure
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -100,3 +103,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+export PATH="/home/alereyleyva/.deno/bin:$PATH"
+# Extend PATH variable with ANDROID_SDK emulator tools
+export PATH=”/home/alereyleyva/Android/Sdk/emulator:${PATH}”
+
+# Aliases
+alias v="vim"
+
+export NVM_DIR="/home/alereyleyva/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
