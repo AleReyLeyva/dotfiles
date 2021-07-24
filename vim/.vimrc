@@ -58,7 +58,6 @@ let g:haskell_backpack = 1                " to enable highlighting of backpack k
 
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
-autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
 " GoTo code navigation.
